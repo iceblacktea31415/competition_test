@@ -13,11 +13,11 @@ int main() {
         return 0; 
     }
 
-    long long a=1,b=2,c;
+    long long a=1,b=2,c=0;
 
     for (int i=3;i<=n;i++) {
-        c=(a+b)%m;   // 边算边取模，a 和 b 永远小于 m
-        a=b;             // 窗口往后挪一格
+        c=(a+b)%m;   
+        a=b;             
         b=c;
     }
 
